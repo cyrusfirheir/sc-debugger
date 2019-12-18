@@ -1,0 +1,29 @@
+:: sc-debugger [nobr]
+
+<div id="sc-debugger-window">
+
+  <div id="menu">
+    <<link "Close">>
+      <<run setup.scDebugger.kill()>>
+    <</link>>
+    <<link "Reload">>
+      <<run setup.scDebugger.relaunch()>>
+    <</link>>
+  </div>
+
+  <div class="variables-display">
+    <<set _load = setup.scDebugger.load()>>
+    <<set _loadKeys = Object.keys(_load)>>
+    <<for _s=0; _s<_loadKeys.length; _s++>>
+      <<set _s_load = _loadKeys[_s]>>
+      <<capture _s_load>>
+        <div @id=_s_load class="variable">
+          <div class="name"><<= _s_load.replace(/\-/g, " > ")>></div>
+          <<link "Set">><</link>>
+          <<= setup.scDebugger.input(_s_load)>>
+        </div>
+      <</capture>>
+    <</for>>
+  </div>
+
+</div>

@@ -1,0 +1,5 @@
+
+*.bat
+
+src/scDebuggerStyle.min.css
+src/scDebuggerStyle.scss
