@@ -6,6 +6,8 @@ A debug tool for SugarCube v2, to be used primarily with Twee Compilers.
 
 ## Installation
 
+First `Clone` or [`Download`](https://github.com/cyrusfirheir/sc-debugger/archive/master.zip) this repository. The *.zip* file contains both the minified-drop-to-use and pretty-you-wanna-know-what-it-does versions of the code. Pick your choice and go to town with it. 
+
 #### *If using the Twine app*
 
 From inside the *`scd`* directory, copy contents of `scDebuggerScript.min.js` into your ***Story Javascript*** section, `scDebuggerStyle.min.css` into ypur ***Story Stylesheet*** section.
