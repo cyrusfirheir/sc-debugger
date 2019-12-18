@@ -1,6 +1,9 @@
 
 # scDebugger
+
 A debug tool for SugarCube v2, to be used primarily with Twee Compilers.
+
+Displays a list of all story variables, and allows editing their current values.
 
 ---
 
