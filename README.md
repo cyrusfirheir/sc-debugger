@@ -5,9 +5,9 @@ A debug tool for SugarCube v2, to be used primarily with Twee Compilers.
 
 Displays a list of all story variables, and allows editing their current values.
 
-![scd-screencap-01](https://imgur.com/bDx7MEg)
-![scd-screencap-02](https://imgur.com/XT7KNAa)
-![scd-screencap-03](https://imgur.com/QBzuViU)
+![scd-screencap-01](https://imgur.com/bDx7MEg.png)
+![scd-screencap-02](https://imgur.com/XT7KNAa.png)
+![scd-screencap-03](https://imgur.com/QBzuViU.png)
 
 ---
 
