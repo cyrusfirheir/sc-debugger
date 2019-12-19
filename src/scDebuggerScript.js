@@ -3,7 +3,7 @@
   /*
   * sc-debugger, by Cyrus Firheir; for SugarCube v2
   * v0.1.0
-  * requires scDebuggerStyle.css / scDebuggerStyle.min.css and scDebuggerMarkup.tw
+  * requires ((flat.js, lodash.min.js) only if using unminified version) scDebuggerStyle.css / scDebuggerStyle.min.css, and scDebuggerMarkup.tw
   */
 
   //sc-debugger defined
