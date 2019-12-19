@@ -18,7 +18,7 @@
       <<set _s_load = _loadKeys[_s]>>
       <<capture _s_load>>
         <div @id=_s_load class="variable">
-          <div class="name"><<= _s_load.replace(/\-/g, " > ")>></div>
+          <div class="name">$<<= setup.scDebugger.parseDelimiter(_s_load)>></div>
           <<link "Set">><</link>>
           <<= setup.scDebugger.input(_s_load)>>
         </div>

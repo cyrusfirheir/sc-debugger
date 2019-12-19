@@ -1,9 +1,11 @@
 #sc-debugger-window {
-  box-sizing: border-box;
+  line-height: 1;
+  user-select: none;
   position: fixed;
   z-index: 1000000;
   background-color: #665966;
   border: 0.5vh solid #B2ADB3;
+  border-radius: 0.5vh;
   color: #B2ADB3;
   top: 2vh;
   right: 2vh;
@@ -13,10 +15,15 @@
   font-size: 3vh;
 }
 
+#sc-debugger-window *, #sc-debugger-window *::before, #sc-debugger-window *::after {
+  box-sizing: border-box;
+  border-radius: 0.5vh;
+}
+
 #sc-debugger-window #menu {
   width: 100%;
   display: flex;
-  flex-direction: horizontal;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   max-height: 10%;
@@ -67,14 +74,51 @@
   border: 0.5vh solid white;
 }
 
-#sc-debugger-window a {
-  background-color: #92B3AE;
-  color: black;
-  margin: 0;
-}
-
 #sc-debugger-window input {
   background-color: #302930;
   min-width: 75%;
   max-width: 75%;
+}
+
+#sc-debugger-window a, #sc-debugger-window a:visited {
+  display: inline-block;
+  line-height: 200%;
+  color: black;
+  background: #92B3AE;
+  padding: 0 calc(1vh * 2);
+  margin: 0;
+  box-shadow: 1px 1px calc(1vh*0.25) black;
+  transition: all 0.1s ease-out;
+}
+
+#sc-debugger-window a:hover {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  z-index: 5;
+  box-shadow: 2px 2px calc(1vh*0.5) black;
+}
+
+#sc-debugger-window a:active {
+  background-color: #92B3AE;
+  background-image: none;
+  transition: all 0.1s ease-out;
+}
+
+#sc-debugger-window ::-webkit-scrollbar {
+  width: calc(2vh*0.5);
+  height: calc(2vh*0.5);
+}
+
+#sc-debugger-window ::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+#sc-debugger-window ::-webkit-scrollbar-thumb {
+  background: #92B3AE;
+  border-radius: 2vh;
+}
+
+#sc-debugger-window ::-webkit-scrollbar-thumb:hover {
+  background: #51746f;
 }

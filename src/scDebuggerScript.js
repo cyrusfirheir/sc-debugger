@@ -1,5 +1,5 @@
 
-(function() {
+;(function() {
   /*
   * sc-debugger, by Cyrus Firheir; for SugarCube v2
   * v0.1.0
@@ -15,7 +15,7 @@
   }
 
   scDebugger.parseDelimiter = function(varName) {
-    return varName.replace(/\-/g, ".");
+    return varName.replace(/\-(\d+)/g, `[$1]`).replace(/\-/g, ".");
   }
 
   //return an input type for variable editing

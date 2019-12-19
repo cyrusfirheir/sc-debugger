@@ -1,5 +1,5 @@
 
-(function() {
+;(function() {
   /*
   * Flat - npm
   * https://www.npmjs.com/package/flat
