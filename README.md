@@ -53,6 +53,10 @@ scDebugger uses `Lodash.js`. If you (somehow) already use it in your project, do
 
 ## Changelog
 
+- v0.1.2
+  - Fixed issue regarding dot notation being used for invalid object property identifiers.
+  - Changed `<div>` ID naming to a number based system instead of slugified variable names to avoid ambiguity while setting variable values.
+
 - v0.1.1
   - Styling changes. The UI now looks more consistent across projects.
   - Tweaks of how the variable names are displayed. Now they're more akin to how you'd define and access Story variables in SugarCube v2.

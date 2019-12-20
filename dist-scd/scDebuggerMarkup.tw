@@ -11,14 +11,15 @@
     <</link>>
   </div>
 
+  v<<= setup.scDebugger.version>>
+
   <div class="variables-display">
     <<set _load = setup.scDebugger.load()>>
-    <<set _loadKeys = Object.keys(_load)>>
-    <<for _s=0; _s<_loadKeys.length; _s++>>
-      <<set _s_load = _loadKeys[_s]>>
-      <<capture _s_load>>
-        <div @id=_s_load class="variable">
-          <div class="name">$<<= setup.scDebugger.parseDelimiter(_s_load)>></div>
+    <<for _s=0; _s<_load.length; _s++>>
+      <<set _s_load = _load[_s]>>
+      <<capture _s, _s_load>>
+        <div @id=_s class="variable">
+          <div class="name">$<<= _s_load>></div>
           <<link "Set">><</link>>
           <<= setup.scDebugger.input(_s_load)>>
         </div>
