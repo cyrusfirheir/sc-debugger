@@ -1,5 +1,5 @@
 
-# scDebugger
+# scDebugger (Development on hiatus)
 
 A debug tool for SugarCube v2, to be used primarily with Twee Compilers.
 
